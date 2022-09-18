@@ -1,0 +1,64 @@
+<canvas id="tela" width="1200" height="800"></canvas>
+
+<script>
+
+	var tela = document.querySelector("canvas");
+	var pincel = tela.getContext("2d");
+
+	pincel.fillStyle = "red";
+	pincel.fillRect(0, 0, 600, 400);
+	pincel.fillStroke = "black";
+    pincel.strokeRect(0, 0, 600, 400);
+
+	pincel.fillStyle = "green";
+	pincel.fillRect(0, 0, 230, 400);
+
+
+	function desenhaImagem() {
+	    	c.drawImage(imagem,10,10);
+		}
+		var tela = document.getElementById("tela");
+		var c = tela.getContext("2d");
+
+
+
+	function desenhaImagem() {
+	    var imagem = new Image();
+	    imagem.src = "emblema3.png";
+	    imagem.onload = function() {
+	            c.drawImage(imagem,105,85);
+    }
+}
+
+desenhaImagem();
+
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle='green';
+    pincel.fillRect(0, 400, 600, 400);
+    pincel.fillStroke = "black";
+    pincel.strokeRect(0, 400, 600, 400);
+ 
+
+    pincel.fillStyle='yellow';
+    pincel.beginPath();
+    pincel.moveTo(50, 600);
+    pincel.lineTo(300, 450);
+    pincel.lineTo(550, 600);
+    pincel.fill();
+
+    pincel.beginPath();
+    pincel.moveTo(50, 600);
+    pincel.lineTo(300, 750);
+    pincel.lineTo(550, 600);
+    pincel.fill();
+
+    pincel.fillStyle='darkblue';
+    pincel.beginPath();
+
+    pincel.arc(300, 600, 100, 0, 2*3.14);
+    pincel.fill();
+
+</script>
